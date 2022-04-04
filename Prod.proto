@@ -1,0 +1,12 @@
+syntax="proto3";
+package services;
+option go_package = "example.com/project/protos/fizz";
+message SendRecordRequest {
+  string record_url=1;
+  int32 id = 2;
+  bytes biliup  = 3;
+}
+message SendRecordResponse {
+  int32 code = 1;
+  string msg = 2;
+}
